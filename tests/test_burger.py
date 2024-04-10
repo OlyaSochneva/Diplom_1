@@ -66,6 +66,5 @@ class TestBurger:
         mock_price.return_value = burger_get_receipt_mock_data["price"]
         burger = burger_sample
         receipt = burger.get_receipt()
-        print(receipt)
         check = check_receipt(receipt, burger_get_receipt_mock_data)
         assert check == "OK"
